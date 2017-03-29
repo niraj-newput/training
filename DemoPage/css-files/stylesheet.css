@@ -1,0 +1,55 @@
+.form-section {
+    padding: 5px;
+}
+div.form-section-left {
+    float: left;
+    width: 10%;
+}
+
+div.form-section-right input,label{
+    margin-left: 5px;
+}
+
+form {
+    margin-left: 20%;
+}
+h1 {
+    font-style: oblique;
+    text-align: center;
+}
+
+header {
+    background-color: #00FFFF;
+    height: 10%;
+}
+
+nav {
+    background-color: #FFE699;
+    float: left;
+    height: 550px;
+    width: 20%;
+}
+
+footer {
+    clear:both;
+    height: 50px;
+    width: 100%;
+    background-color: #FF8EBF;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    background-color: #B3FFE6;
+    box-sizing: content-box;
+    float: right;
+    height: 550px;
+    overflow: scroll;
+    width: 80%;
+}
+section article {
+    padding: 10px;
+}

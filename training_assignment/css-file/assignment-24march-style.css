@@ -1,0 +1,187 @@
+body {
+    background-image: url("../images/yellow_background.png");
+    background-color: #AACCAA;
+}
+
+/*div.view-image img {
+    width:1204px;
+    height: 282px;
+}*/
+div.author-content {
+        background-color: rgba(0,0,0,.6);
+        border-radius: 9px;
+        color: white;
+        float: right;
+        /*height: 266px;*/
+        width: 23%;
+}
+
+div.about-author img {
+        border: 1px solid rgb(0,0,0);
+        left: 40px;
+        position: relative;
+}
+
+div.about-author p {
+        text-align: justify;
+}
+
+div.footer-division {
+    background-image: url("../images/line.png");
+    background-repeat: repeat-x;
+}
+
+div.footer-division img {
+    position: relative;
+    left: 46%;
+}
+
+div.header-division {
+        background-image: url("../images/line.png");
+        background-repeat: repeat-x;
+        padding: 6px;
+}
+
+div.inside-author {
+        margin: 22px;
+}
+
+div.main-content {
+        /*border: 6px solid red;*/
+        margin-top: 20px;
+        overflow: hidden;
+}
+
+div.main-content-section {
+    /*border: 2px dashed black;*/
+    width: 70%;
+    float: left;
+}
+    
+div.my-friend {
+    float: left;
+    width: 34%;
+}
+
+div.my-pic {
+    float: left;
+    width: 34%;
+}
+
+div.my-pic img{
+    border-color: black;
+    border-width: 2px;
+}
+
+div.my-tweet {
+    float: left;
+    width: 32%;
+}
+    
+div.para-content {
+        /*border: 2px solid black;*/
+        float: left;
+        width: 74%;
+}
+
+div.para-content p {
+        text-align: justify;
+}
+div.para-heading span{
+        position: relative;
+        bottom: 10px;
+        font-size: 24px;
+}
+
+div.view-image {
+    height: 200px;
+    /*width:1204px;*/
+    background-image: url("../images/sanfrancisco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+/*div.view-image-top {
+    height: 150px;
+    width: 100%;
+}*/
+
+div.view-image-bottom {
+    bottom: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(0,0,0,.6);
+    height: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+div.view-image-bottom span {
+        color: white;
+        font-family: cursive;
+        position: relative;
+        top: 16px;
+}
+   
+div.view-image-bottom input[type="button"] {
+    bottom: 8px;
+    background-color: #CC0066;
+    border-radius: 5px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 8px;
+    
+}
+
+.footer {
+    /*border: 2px solid red;*/
+    display: flex;
+    overflow: hidden;
+}
+
+.footer div {
+    flex: 1;
+}
+
+.footer h5 {
+    font-family: cursive;
+}
+
+.footer table td {
+    font-size: 11px;
+    padding-right: 40px;
+}    
+  
+.header-menu {
+     padding: 5px;
+ }
+ 
+.header-menu nav {
+    float: right;
+    margin-left: 5px;
+}
+
+.header-menu nav a{
+    padding: 10px;
+}
+
+.logo-name {
+    font-family: cursive;
+    font-size: 50px;
+    
+}
+
+.logo-name {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+ul {
+    font-size: 10px;
+}
+.main-container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
