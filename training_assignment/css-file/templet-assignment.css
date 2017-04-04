@@ -1,0 +1,80 @@
+
+* {
+    letter-spacing: 1px;
+    font-family: 'Montserrat', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.about {
+    background-color: #F7FCFF;
+    border-bottom: 1px solid #E1E1E1;
+    border-top: 1px solid #83C7DC;
+    box-sizing: border-box;
+}
+
+.about-head {
+    font-size: 22px;
+    padding-left: 10px;
+}
+    
+.about-heading-pad {
+    line-height: 30px;
+    padding: 15px 0px 15px 0px;
+}
+
+.custom-button {
+    color: #FFFFFF;
+    display: block;
+    margin: 10px auto 0px;
+}
+
+.coustom {
+    padding: 100px 0px 100px 0px;
+}
+
+.coustom h3 {
+    text-align: center;
+}
+
+.coustom p {
+    font-size: 16px;
+}
+
+.coustom-try {
+    /*border: 2px solid black;*/
+    text-align: center;
+    padding: 35px 0px 35px;
+}
+.emoji {
+    vertical-align: none;
+    width: 20px;
+    height: 20px;
+}
+    
+.row-try-sec {
+    padding: 30px 0px 30px 0px;
+}
+
+.main-heading h4{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+span.button {
+        background-color: #0084FF;
+        border-radius: 2px;
+        color: #FFFFFF;
+        display: block;
+        height: 30px;
+        margin: 10px auto 0px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width:140px;
+}
+
+ a {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #FFFFFF;
+}
