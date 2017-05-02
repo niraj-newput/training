@@ -13,9 +13,15 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     
     <script src="../js-file/firebase-common.js"></script>
-    <script src="../js-file/signup-form.js"></script>
+    <script type="text/javascript">
+      function load(){
+        console.log("load");
+        var eventHandler = new SignUpEventHandler();
+        eventHandler.signUpEvent();
+      }
+    </script>
   </head>
-  <body>
+  <body onload="load()">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-3 col-md-6 form-container">
@@ -27,7 +33,7 @@
                 </div>
                 <div class="form-group">
                   <label for="password">Password</label>
-                  <input id="pass_c" type="password" class="form-control valid" name="pass_confirmation"  placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                  <input id="password" type="password" class="form-control valid" name="password"  placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
                 </div>
                 <div class="form-group">
                   <label for="conform-password">Confirm Password</label>
