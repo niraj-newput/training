@@ -1,0 +1,52 @@
+body {
+    background-color: #AABB11;
+}
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border-color: #0084ff;
+    background-color: #0084ff;
+    color: #FFFFFF;
+    margin: 10px 10px;
+    width: 100px;
+}
+.desc {
+    text-align: justify;
+}
+
+.img {
+    background-image: url('image/india.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.img img {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+.tile {
+    background-color: #4767b2;
+    border: 1px solid rgba(255,255,200,.6);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    display: inline-block;
+    /*height: 450px;*/
+    height:300px;
+    margin: 10px;
+    position: relative;
+}
+
+.title {
+    padding: 20px;
+    text-align: center;
+}

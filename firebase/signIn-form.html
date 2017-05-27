@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form validation</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAQh5kRgi79JisqqNyJZCZTL584oAQPAmw",
+            authDomain: "authentication-3b271.firebaseapp.com",
+            databaseURL: "https://authentication-3b271.firebaseio.com",
+            projectId: "authentication-3b271",
+            storageBucket: "authentication-3b271.appspot.com",
+            messagingSenderId: "65252869653"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        
+        <style>
+            label.error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <ul class="nav nav-tabs nav-pills" role="tablist">
+                        <li role="presentatio" class="active"><a id="signin-link" href="#home" aria-controls="home" role="tab" data-toggle="tab">SignIn</a></li>
+                        <li role="presentation"><a id="signup-link" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SignUp</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-offset-3 col-xs-6">
+                    
+                    <form id="signIn" action="#" name= "signIn" class="" >
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" name="email" id="signin-email" placeholder="john@doe.com"/>
+                          </div>
+                          <div class="form-group">
+                              <label for="password">Password</label>
+                              <input type="password" class="form-control" name="password" id="signin-password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                          </div>
+                          <button type="submit"  class="btn btn-default">SignIn</button>
+                          <button id="signout-btn" type="button"  class="btn btn-default hide">SignOut</button>
+                      <div id="signin-result" class="hidden "><label ></label></div>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <div class="row ">
+                <div class="col-xs-offset-3 col-xs-6 ">
+                    <form id="signUpForm" action="#" name= "signUp" class="hidden a">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="John"/>
+                        </div>
+                        
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="john@doe.com"/>
+                          </div>
+                          <div class="form-group">
+                              <label for="password">Password</label>
+                              <input id="pass_c" type="password" class="form-control valid" name="pass_confirmation"  placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                          </div>
+                          <div class="form-group">
+                              <label for="conform-password">Confirm Password</label>
+                              <input type="password" class="form-control" name="pass" data-validation="confirmation" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                          </div> 
+                          <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" name="address" id="address" data-validation="required">
+                          </div>
+                          
+                          <button type="submit" class="btn btn-default">SignUp</button>
+                         <!-- <button type="button" id="signIn" class="btn btn-default pull-right">Click for SignIn Page</button>-->
+                         <div id="signup-result" class="hidden "><label ></label></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+        <script src="signIn-form.js"></script>
+    </body>
+</html>

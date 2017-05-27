@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="../css-file/form.css"/>
+    
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    
+    <script src="../js-file/firebase-common.js"></script>
+    <script type="text/javascript">
+      function load(){
+        console.log("load");
+        var eventHandler = new SignUpEventHandler();
+        eventHandler.signUpEvent();
+      }
+    </script>
+  </head>
+  <body onload="load()">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 form-container">
+          <div class="form-section">
+            <form id="signUpForm" action="#" name= "signUp">
+              <div class="form-group">
+                <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="john@doe.com"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" class="form-control valid" name="password"  placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                </div>
+                <div class="form-group">
+                  <label for="conform-password">Confirm Password</label>
+                  <input type="password" class="form-control" name="pass" data-validation="confirmation" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                </div> 
+                    
+                <button type="submit" id="signup-submit" class="btn btn-default">SignUp</button>
+                <!-- <button type="button" id="signIn" class="btn btn-default pull-right">Click for SignIn Page</button>-->
+                <div id="signup-result" class="hidden "><label ></label></div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  background-color: #f5f5dc; }
+
+.form-container {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.form-section {
+  background-color: rgba(51, 122, 183, 0.3);
+  border: 1px solid #DDDDDD;
+  padding: 20px; }
+
+label.error {
+  color: red;
+  display: block; }
+
+.personal-info-submit-btn {
+  width: 15%;
+  margin: 0px auto; }
+
+/*# sourceMappingURL=form.css.map */

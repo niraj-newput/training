@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> assignment on date</title>
+    </head>
+    <body>
+        <input type="text" id="date" placeholder="enter date ( yyyy-mm-dd )" />
+        <button onclick = "showDay()">Day</button>
+        <p id="result"></p>
+        <script>
+        var day = [  'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            /*function showDay (){
+                var user_date = document.getElementById('date').value;
+                var d = new Date(user_date);
+                console.log(d.toString());
+                var wkd_day = d.getDay();
+                console.log(day[wkd_day]);
+                document.getElementById('result').innerHTML = 'DAY : ' + day[wkd_day];
+            }*/
+            function showDay (){
+                var userDate = document.getElementById('date').value;
+                 userDate = new Date(userDate );
+                console.log(userDate.toString());
+                var wkday = userDate.getDay();
+                console.log(day[wkday]);
+                document.getElementById('result').innerHTML = 'DAY : ' + day[wkday];
+            }
+        </script>
+    </body>
+</html>
