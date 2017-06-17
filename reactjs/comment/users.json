@@ -1,0 +1,23 @@
+{
+	"users": [{
+    "id": "1",
+		"username":"nirajpatidar",
+		"password": "niraj@123",
+		"name": "Niraj",
+		"friends": 23,
+		"enemies": 2,
+		"coverimg": "https://bootstrap-themes.github.io/application/assets/img/iceland.jpg",
+    "userimg" :"https://bootstrap-themes.github.io/application/assets/img/avatar-dhg.png",
+    "status": "I Wish i was littile bit taller, wish i was a baller , wish i had a girl...also"
+	},{
+    "id": "2",
+		"username":"shubhamk",
+		"password": "shubham@123",
+		"name": "Shubham Katariya",
+		"friends": 13,
+		"enemies": 2,
+    "coverimg": "https://bootstrap-themes.github.io/application/assets/img/iceland.jpg",
+    "userimg" :"https://bootstrap-themes.github.io/application/assets/img/avatar-dhg.png",
+    "status": "I Wish i was littile bit taller, wish i was a baller , wish i had a girl...also"
+	}]
+}
